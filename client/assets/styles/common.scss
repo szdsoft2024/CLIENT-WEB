@@ -1,0 +1,379 @@
+//鼠标变小手
+.pointer {
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+    font-weight: 600;
+  }
+}
+
+//清浮动
+.clearfix {
+  &:after {
+    visibility: hidden; //元素不显示
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//字体居中
+.text-center {
+  text-align: center
+}
+
+//a标签样式设置
+.link-type, .link-type:focus {
+  color: #337ab7;
+  cursor: pointer; //鼠标变小手
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+//标签占比调整
+.main-form-item-24 {
+  .el-form-item__label {
+    width: 12.5%;
+  }
+
+  .el-form-item__content {
+    width: calc(87.5% - 5px);
+  }
+}
+
+//按钮样式
+.main-button {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+}
+
+.main-button-left {
+  display: flex;
+  justify-content: flex-start
+}
+
+.main-button-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end
+}
+
+//相对位置
+.main-button-position {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  .right {
+    position: absolute;
+    margin-top: 5px;
+  }
+}
+
+//表格设置
+.main-table {
+  .el-table__header-wrapper {
+    height: 30px;
+  }
+
+  .el-table__header {
+    height: 30px;
+  }
+}
+
+//table表格标题区域（描述和功能按钮）
+.main-table-title {
+  height: 26px;
+  line-height: 26px;
+  border: 1px solid #dfe6ec;
+  border-bottom: 0;
+  background-color: #F7F9FC;
+  display: flex;
+  font-size: $fz;
+
+  .main-table-title-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #909399;
+    padding-left: 10px;
+
+    span {
+      padding-left: 5px;
+      padding-right: 5px;
+      color: #1890ff;
+    }
+  }
+
+  .main-table-title-right {
+    text-align: right;
+    align-items: center;
+    padding-right: 10px;
+
+    .el-button {
+      padding: 0;
+    }
+  }
+}
+
+//自定义文本区域标签和输入框样式
+.main-textarea {
+  display: flex;
+  box-sizing: border-box;
+  //标签
+  .main-textarea-label {
+    display: flex;
+    font-size: $fz;
+    font-weight: 600;
+    color: #606266;
+    background-color: #eef1f6;
+    padding-top: 0;
+    justify-content: flex-end;
+    padding-right: 15px;
+    align-items: center;
+    padding-left: 5px;
+  }
+
+  //输入框DIV
+  .main-textarea-content {
+    padding: 3px;
+    flex-grow: 1;
+  }
+
+  //输入框
+  .main-textarea-input {
+    display: inline;
+  }
+
+  //字数显示下标
+  .el-input--medium {
+    height: auto;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .el-textarea__inner {
+    padding: 5px;
+    font-size: $fz;
+    color: #606266;
+    font-family: auto;
+    border-radius: 1px;
+  }
+
+  .el-input__count {
+    bottom: 2px;
+  }
+}
+
+//说明样式
+.main-explain {
+  font-size: $fz;
+  color: #1879FF;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 0;
+}
+
+// left5px
+.main-left5px {
+  padding-left: 5px;
+}
+
+.main-left10px {
+  padding-left: 10px;
+}
+
+// *红色
+.main-required {
+  color: #ff4949;
+  padding: 0 3px 0 0;
+}
+
+//提示帮助按钮
+.main-help-tip {
+  color: #5da9f8;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+    font-weight: 600;
+  }
+}
+
+//标签
+.main-form-label {
+  font-size: $fz;
+  font-weight: 600;
+  color: #606266;
+  padding-top: 0;
+  text-align: left;
+  overflow: hidden;
+  width: calc(100% - 8px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #eef1f6;
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+//全屏设置尾部状态栏
+.main-wf-app {
+  height: calc(100vh - 84px);
+  position: relative;
+  overflow: hidden;
+
+  .main-wf-main {
+    height: calc(100% - 30px);
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+//全屏设置尾部状态栏
+.main-wf-foot-status {
+  display: flex;
+  flex: 0;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  background-color: #F5F7FA;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #E4E7ED;
+  padding-left: 10px;
+  font-size: $fz;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  .foot-status {
+    display: flex;
+    flex: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .foot-label {
+    color: #606266;
+    padding-right: 5px;
+  }
+
+  .foot-value-yellow {
+    color: #DDAA00;
+    padding-right: 20px;
+  }
+
+  .foot-value-red {
+    color: #d94646;
+    padding-right: 20px;
+  }
+
+  .foot-value-blue {
+    color: #1890ff;
+    padding-right: 20px;
+  }
+}
+
+// 星星注释
+.main-tag-star-on {
+  padding-right: 2px;
+  cursor: pointer;
+  color: #ffd70b;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+    font-weight: 600;
+  }
+}
+
+.main-tag-star-off {
+  padding-right: 2px;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+    font-weight: 600;
+  }
+}
+
+//设置鼠标为移动光标
+.main-drag-handle {
+  cursor: move;
+  color: #409eff;
+
+  &:hover {
+    color: #a0cfff;
+  }
+}
+
+.szd__tb__wrapper {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hp100 {
+  height: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+}
+
+.h400 {
+  height: 400px;
+}
+
+.ova {
+  overflow: auto;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+@media only screen and (max-width: 920px) {
+  .main-button-position .right {
+    position: initial;
+    margin-top: 5px;
+  }
+}

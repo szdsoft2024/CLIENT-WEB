@@ -1,0 +1,38 @@
+.app-sub-container {
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: auto;
+  flex-shrink: 0;
+  //隐藏form输入框提示文字
+  .el-form-item__error {
+    display: none !important;
+    height: 0px !important;
+  }
+
+  .el-input__validateIcon {
+    display: none !important;
+    height: 0px !important;
+  }
+}
+
+.app-dialog-container {
+  padding: 0px;
+  box-sizing: border-box;
+  // bottom: -10px;
+  //隐藏form输入框提示文字
+  .el-form-item__error {
+    display: none !important;
+    height: 0px !important;
+  }
+}
+.g-render .app-sub-container{
+  justify-content: space-between;
+}
+.app-all-screen-container {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.app-sub-sub {
+  padding: 5px 0 0 0;
+}

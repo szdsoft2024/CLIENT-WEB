@@ -1,0 +1,31 @@
+/* 修改element-ui默认主题色 */
+
+/* 主题色变量 */
+$--color-primary: #1890ff; //主题色
+$--color-success: #13ce66; //弹出消息颜色
+$--color-warning: #ffba00; //弹出消息颜色
+$--color-danger: #ff4949; //弹出消息颜色
+
+// $--color-info: #1E1E1E;
+
+/* Font 默认字体大小修改 */
+// $--font-size-base: 12px;
+
+$--button-font-weight: 400; //按钮和操作按钮字体的粗细
+
+// $--color-text-regular: #1f2d3d;
+/* Switch-------------------------- */
+// $--border-color-light: #dfe4ed;   //下划线颜色
+// $--border-color-lighter: #e6ebf5; //边框线颜色
+
+$--table-border: 1px solid #dfe6ec; //表格边框粗细及线的颜色
+
+/* 改变 icon 字体路径变量，必需 */
+//$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+//@import "~element-ui/packages/theme-chalk/src/index";
+
+// 主题色样式导出
+:export {
+  theme: $--color-primary;
+}

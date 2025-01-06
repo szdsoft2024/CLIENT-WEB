@@ -1,0 +1,39 @@
+.app-container {
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  //隐藏form输入框提示文字
+  .el-form-item__error {
+    display: none !important;
+    height: 0px !important;
+  }
+
+  .el-input__validateIcon {
+    display: none !important;
+    height: 0px !important;
+  }
+
+  // 隐藏红色错误框
+  .el-form-item.is-error .el-input__inner {
+    border-color: #d8dce6 !important;
+  }
+
+  .el-form-item.is-error .el-input__inner:focus,
+  .el-form-item.is-error .el-textarea__inner:focus {
+    border-color: #1890ff !important;
+  }
+}
+
+//表单画线
+.app-el-form {
+  border: 1px solid #d8dce6;
+  padding: 2px;
+  height: auto;
+  margin: 0;
+}
+
+#nprogress .peg {
+  box-shadow: none;
+}

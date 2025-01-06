@@ -1,0 +1,70 @@
+.j-drag {
+  height: 100%;
+  overflow: hidden;
+
+  > .el-row {
+    height: 100%;
+    overflow: hidden;
+
+    > .el-col {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+}
+
+.m-drag {
+  border: 1px solid rgb(235, 238, 245);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  + * {
+    margin-top: 10px;
+  }
+
+  > h3 {
+    height: 30px;
+    background: rgb(245, 248, 250);
+    padding: 0 10px;
+    line-height: 30px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  > .list {
+    padding: 5px;
+    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    justify-content: flex-start;
+
+    .div-but {
+      display: flex;
+      align-items: center;
+      width: 36px;
+    }
+
+    .el-button--small {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 7px;
+    }
+  }
+
+  > .list-table {
+    padding: 5px;
+    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    justify-content: flex-start;
+    position: relative;
+  }
+}

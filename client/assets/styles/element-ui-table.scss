@@ -1,0 +1,68 @@
+//table设置
+
+// .el-table--medium提高权重, 避免样式复写无效, 必要时使用 !important
+.el-table.is-scrolling-none th.el-table-fixed-column--left，.el-table__header-wrapper tr th.el-table-fixed-column--left, .el-table__header-wrapper tr th.el-table-fixed-column--right, .el-table.is-scrolling-right th.el-table-fixed-column--right, .el-table.is-scrolling-none th.el-table-fixed-column--right, .el-table.is-scrolling-none th.el-table-fixed-column--right, .el-table.is-scrolling-left th.el-table-fixed-column--left {
+  background-color: #eef1f6;
+}
+
+.el-table {
+  .el-table__cell {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 26px;
+  }
+
+  //表格抬头
+  th {
+    background-color: #eef1f6;
+    color: #515a6e; //字体颜色
+    padding: 0;
+    height: 30px;
+    font-size: $fz;
+  }
+
+  .el-table__header-wrapper th {
+    height: 30px;
+    font-size: $fz;
+    background-color: #eef1f6;
+    color: #515a6e; //字体颜色
+    padding: 0;
+    text-align: center;
+  }
+
+  //单元格设置div
+  tr {
+    td {
+      padding: 0;
+
+      div {
+        font-size: $fz;
+        //输入框设置
+        .el-input__inner {
+          height: 26px;
+          line-height: 26px;
+          font-size: $fz;
+        }
+      }
+    }
+  }
+
+  .el-button--small {
+    padding: 0;
+  }
+
+  //表格错位
+  th.gutter {
+    display: table-cell !important;
+  }
+
+  colgroup.gutter {
+    display: table-cell !important;
+  }
+}
+
+.el-table--enable-row-transition .el-table__body td.el-table__cell {
+  .el-input-number {
+    width: 100%;
+  }
+}

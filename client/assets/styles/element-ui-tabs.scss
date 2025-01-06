@@ -1,0 +1,50 @@
+//tab标签样式
+.el-tabs__header {
+  .el-tabs__item {
+    font-size: $fz;
+    font-weight: bolder;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border-radius: 2px 2px 0 0;
+}
+.el-tabs--card>.el-tabs__header{
+  height: 32px;
+}
+
+.el-tabs__new-tab{
+  margin: 4px 0 0 0;
+}
+
+.el-tabs--border-card {
+  > .el-tabs__content {
+    padding: 5px;
+  }
+
+  &.flex-1, &.szd__tb__wrapper {
+    > .el-tabs__content {
+      padding: 5px;
+      flex: 1;
+
+      > .el-tab-pane {
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+.el-tabs--border-card {
+  box-shadow: none;
+}
+
+//tag样式设置
+.tags-view-container .tags-view-wrapper {
+  .tags-view-item:hover {
+    background-color: dodgerblue;
+    color: white;
+  }
+}

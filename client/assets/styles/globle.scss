@@ -1,0 +1,53 @@
+//设置html样式
+html {
+  height: 100%;
+  box-sizing: border-box; //怪异盒
+}
+
+//bode默认样式
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale; //兼容谷歌字体 自定义抗锯齿
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif; //字体
+  margin: 0; //边框滚动条取消
+}
+
+//挂载id ：app样式
+#app {
+  height: 100%;
+}
+
+//通用样式设置 把边框和内边距放入框中
+*,
+*:before,
+*:after {
+  box-sizing: inherit; //继承
+}
+
+//a标签样式设置
+a,
+a:focus,
+a:hover {
+  cursor: pointer; //鼠标变小手
+  color: inherit;
+  text-decoration: none;
+}
+
+//滚动条的宽度
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #f8f8f9; //滚动条背景色
+}
+
+//滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: #a1a3a9; //滚动条颜色
+  border-radius: 3px;
+}
+
+.disFlex {
+  display: flex;
+}

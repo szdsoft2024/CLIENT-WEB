@@ -1,0 +1,22 @@
+//树形菜单设置
+.el-tree {
+  overflow: auto;
+  font-size: $fz;
+  margin: 3px;
+
+  .el-tree-node {
+    .el-tree-node__label {
+      font-size: $fz;
+    }
+  }
+
+  .el-select-dropdown__item {
+    font-size: $fz;
+  }
+}
+
+//树形菜单滚动条设置
+.el-tree > .el-tree-node {
+  display: inline-block;
+  min-width: 100%;
+}

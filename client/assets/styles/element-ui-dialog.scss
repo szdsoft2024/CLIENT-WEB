@@ -1,0 +1,161 @@
+.el-dialog__wrapper {
+  overflow: hidden;
+}
+
+.el-dialog__wrapper + .el-picker-panel {
+  z-index: 3000 !important;
+}
+
+//弹出框样式设置
+.el-dialog {
+  display: flex; //浮动盒
+  flex-direction: column; //：主轴为垂直方向，起点在上沿
+
+  //标题 高度36
+  .el-dialog__header {
+    padding: 0px 10px 0 10px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #bed9f2;
+    margin: 0;
+
+    .el-dialog__title {
+      font-size: 14px;
+      font-weight: bolder;
+    }
+
+    .el-dialog__headerbtn {
+      top: 0;
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+
+  // dialog高度
+  .el-dialog__body {
+    flex: 1;
+    padding: 10px 20px 10px 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    
+    .dialog-content {
+      overflow-y: auto;
+    }
+  }
+
+  .el-dialog__body {
+    display: flex;
+    flex-direction: column;
+
+    .el-table {
+      flex-grow: 1;
+
+      .el-table__body-wrapper {
+        overflow-y: auto;
+
+        .el-table__body {
+          min-width: 100%;
+        }
+      }
+    }
+
+    .el-tabs {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      .el-tabs__content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        .el-tab-pane {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+    }
+
+  }
+
+  //高度58
+  .el-dialog__footer {
+    padding: 10px 20px 20px 20px;
+
+    .el-button--medium {
+      font-size: $fz;
+      padding: 7px 15px;
+    }
+  }
+
+  // 弹窗内表单元素错误提示演示
+  .el-form-item.is-error .el-input__inner {
+    border-color: #d8dce6 !important;
+  }
+
+  .el-form-item.is-error .el-input__inner:focus,
+  .el-form-item.is-error .el-textarea__inner:focus {
+    border-color: #1890ff !important;
+  }
+}
+
+.el-message-box {
+  border-radius: 0px;
+  border: 0px solid #EBEEF5;
+
+  .el-message-box__header {
+    background-color: #bed9f2;
+    padding: 0px 10px 0 10px;
+    height: 36px;
+    line-height: 36px;
+
+    .el-message-box__title {
+      height: 36px;
+      line-height: 36px;
+      font-size: 14px;
+      font-weight: bolder;
+    }
+
+    .el-message-box__headerbtn {
+      height: 36px;
+      line-height: 36px;
+      top: 0;
+    }
+  }
+
+  .el-input__inner {
+    border-radius: 1px;
+  }
+
+  &.szd-msg-box {
+    position: relative;
+    z-index: 3000 !important;
+  }
+}
+
+.el-dialog__headerbtn {
+  width: 40px;
+  line-height: 40px;
+}
+
+.el-dialog .el-dialog__header .el-dialog__headerbtn {
+  line-height: 40px;
+}
+
+.el-dialog__footer.el-render {
+  padding: 10px 0;
+}
+
+.u-bl {
+  background: url("../icons/bl.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+.u-br {
+  background: url("../icons/br.png") left top no-repeat;
+  background-size: 100% 100%;
+}

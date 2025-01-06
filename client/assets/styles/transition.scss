@@ -1,0 +1,49 @@
+// global transition css
+
+//动画开始
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+//动画开始变化
+.fade-enter,
+.fade-leave-active {
+  opacity: 0; //透明度
+}
+
+/* 动画过度 */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s; //所有动画开始执行
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px); //x轴位移-30px
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px); //x轴位移到30px
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
